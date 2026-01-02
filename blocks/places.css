@@ -77,22 +77,22 @@
     line-height: 163%;
     margin: 0;
     gap: 25px;
+
 }
 
 .paragraph {
     margin: 0;
     font-size: 18px;
     width: 484px;
-    height: 174px;
 }
 
- @media screen and (max-width:1280px) and (min-width:768px){
-    .places{
+@media screen and (max-width:1280px) and (min-width:768px) {
+    .places {
         margin: 0 148px;
     }
 
-    .place{
-        grid-template-columns:340px 1fr;
+    .place {
+        grid-template-columns: 340px 1fr;
         grid-template-rows: auto 340px auto;
         grid-template-areas:
             "place__title place__website"
@@ -102,31 +102,34 @@
         justify-content: center;
     }
 
-    .place__title{
+    .place__title {
         font-size: 42px;
     }
 
-    .place__image{
+    .place__image {
         width: 340px;
         height: 340px;
-        }
-
-    .paragraph{
-        font-size: 16px;
-        width: auto;
-        height: 208px;
     }
 
-    .place__bottom{
+    .place__paragraph {
+        overflow: scroll;
+    }
+
+    .paragraph {
+        font-size: 16px;
+        width: auto;
+    }
+
+    .place__bottom {
         width: 355px;
     }
 }
 
-@media screen and (max-width:767px){
+@media screen and (max-width:767px) {
 
     .place {
         width: 100%;
-        grid-template-columns:auto;
+        grid-template-columns: auto;
         grid-template-rows: auto 1fr;
         grid-template-areas:
             "place__title"
@@ -144,12 +147,12 @@
         margin: 16px;
     }
 
-    .place__website{
+    .place__website {
         font-size: 18px;
         margin: 16px;
     }
 
-    .website__actor{
+    .website__actor {
         font-size: 12px;
     }
 
@@ -159,7 +162,7 @@
         margin: 0 16px 0;
     }
 
-    .paragraph{
+    .paragraph {
         font-size: 16px;
         width: auto;
         height: auto;
@@ -167,14 +170,10 @@
         margin-left: 16px;
     }
 
-    .place__bottom{
+    .place__bottom {
         width: 100%;
         height: 48px;
         margin: 0 16px 0;
         font-size: 18px;
     }
 }
-
-
-
- 
